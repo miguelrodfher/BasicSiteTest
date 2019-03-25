@@ -1,18 +1,18 @@
-
-
 /* ======================================== * 
-
  * ======================================== */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+ /* Body=============================================================================================================================== */
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 body {
+  margin:0;
+  padding:0;
   width: 100%;
   display: block;
   overflow-x: hidden;
   background-color: #1f2029;
   color: #c4c3ca;
-  font-family: "Montserrat" , sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 ::selection {
   background-color: #000;
@@ -25,12 +25,11 @@ body {
 a:hover {
   text-decoration: none;
 }
-/* #Cursor
-================================================== */
 
-.cursor,
-.cursor2,
-.cursor3 {
+
+/* #Cursor=============================================================================================================================== */
+
+.cursor, .cursor2, .cursor3 {
   position: fixed;
   border-radius: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -44,16 +43,14 @@ a:hover {
   width: 0;
   z-index: 99999;
 }
-.cursor2,
-.cursor3 {
+.cursor2, .cursor3 {
   height: 36px;
   width: 36px;
   z-index: 99998;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.cursor2.hover,
-.cursor3.hover {
+.cursor2.hover, .cursor3.hover {
   -webkit-transform: scale(2) translateX(-25%) translateY(-25%);
   transform: scale(2) translateX(-25%) translateY(-25%);
   border: none;
@@ -67,17 +64,15 @@ a:hover {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 @media screen and (max-width: 1200px) {
-  .cursor,
-  .cursor2,
-  .cursor3 {
+  .cursor, .cursor2, .cursor3 {
     display: none;
   }
 }
 
+/* Shadow title (left)=========================================================================================================================== */
 .shadow-title {
   position: fixed;
   top: 0;
-  margin-top: 30px;
   left: 20px;
   width: 100%;
   height: 300%;
@@ -85,21 +80,17 @@ a:hover {
   font-family: "Motserrat", sans-serif;
   -webkit-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
-  font-size: 18vw;
+  font-size: 11vw;
   line-height: 1;
   color: rgba(200, 200, 200, 0.1);
-  background: linear-gradient(
-    90deg,
-    rgba(200, 200, 200, 0),
-    rgba(200, 200, 200, 0.35)
-  );
+  background: linear-gradient(47deg, rgba(131,58,180,0) 0%, rgba(122,62,212,0.15) 22%, rgba(65,134,234,0.25) 50%, rgba(29,67,253,0.50) 75%, rgba(69,88,252,0.75) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900;
+  font-weight: 700;
   z-index: 1;
 }
 .section-parallax {
-   position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -114,9 +105,91 @@ a:hover {
   display: block;
 }
 
-.section-florida{
-	
+/* Section Florida animated===================================================================================================================== */
+.section-florida {
+  margin: 0;
+  padding:0;
+  position:absolute;
+  top:50%;
+  transfor: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color:#fff;
+  font-size: 6vw;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2em;
 }
+
+.section-florida h1 {
+  margin: 0;
+  padding:0;
+  position:absolute;
+  top:50%;
+  transfor: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color:#fff;
+  font-size: 6vw;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.section-florida h1 span{
+  opacity: 0;
+  display: inline-block;
+  animation:animate 1s linear forwards;
+}
+
+@keyframes animate {
+
+  0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter:blur(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+
+  }
+}
+
+.section-florida h1 span:nth-child(1){
+  animation-delay: 0.5s;
+}
+
+.section-florida h1 span:nth-child(2){
+  animation-delay: 1s;
+}
+
+.section-florida h1 span:nth-child(3){
+  animation-delay: 1.5s;
+}
+
+.section-florida h1 span:nth-child(4){
+  animation-delay: 2s;
+}
+
+.section-florida h1 span:nth-child(5){
+  animation-delay: 2.5s;
+}
+
+.section-florida h1 span:nth-child(6){
+  animation-delay: 2.75s;
+}
+
+.section-florida h1 span:nth-child(7){
+  animation-delay: 3s;
+}
+
+
+/* Title wrap up ========================================================================================================================= */
+
+
 .full-height {
   height: 100vh;
 }
@@ -184,206 +257,39 @@ a:hover {
 .project-link-wrap:hover p {
   opacity: 0.15;
 }
+/* Section news ======================================================================================================================== */
 
-/* Case Study Showcase
-================================================== */
-
-.case-study-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  width: auto;
-  margin: 0;
-  padding: 8px 15px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  list-style: none;
-  background-color: rgba(31, 32, 41, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-}
-.case-study-wrapper .case-study-name {
-  margin: 5px;
-  display: inline-block;
-}
-.case-study-wrapper .case-study-name a {
-  position: relative;
-  list-style: none;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
+.news{
+  margin:0;
   padding: 0;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 2px;
-  color: #8e8d9a;
-  opacity: 0.5;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-}
-.case-study-wrapper .case-study-name a:hover {
-  text-decoration: none;
-}
-.case-study-wrapper .case-study-name.active a {
-  opacity: 1;
-  color: #fff;
-}
-.case-study-images {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: 2;
-}
-.case-study-images li {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  list-style: none;
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-}
-.case-study-images li .img-hero-background {
-  position: absolute;
-  width: calc(100% - 80px);
-  max-width: 950px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
-  list-style: none;
-  opacity: 0;
-  border-radius: 20px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-}
-.case-study-images li .img-hero-background img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.case-study-images li.show .img-hero-background {
-  opacity: 1;
-}
-.case-study-images li .case-study-title {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  text-align: center;
-  left: 30px;
-  display: block;
-  opacity: 0;
-  z-index: 19;
-  letter-spacing: 1px;
-  font-size: 14px;
-  -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
-  font-weight: 400;
-  line-height: 16px;
-  color: #fff;
-  font-style: italic;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-}
-.case-study-images li.show .case-study-title {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-.case-study-images li .hero-number-back {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  display: block;
-  list-style: none;
-  opacity: 0;
-  font-size: 100px;
-  font-weight: 900;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.2);
-  z-index: 5;
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-}
-.case-study-images li .hero-number {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  width: 40px;
-  margin-left: -70px;
-  display: block;
-  letter-spacing: 2px;
-  text-align: center;
-  list-style: none;
-  opacity: 0;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 1;
-  color: #fff;
-  z-index: 6;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-}
-.case-study-images li .hero-number-fixed {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  margin-left: 30px;
-  width: 40px;
-  text-align: center;
-  display: block;
-  letter-spacing: 2px;
-  list-style: none;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 1;
-  color: #fff;
-  z-index: 6;
-}
-.case-study-images li .hero-number-fixed:before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: -60px;
-  width: 60px;
-  height: 1px;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-.case-study-images li.show .hero-number {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-.case-study-images li.show .hero-number-back {
-  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #060c21;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* #back to top arrow
-================================================== */
+.container-news{
+  position: relative;
+  width: 100%;
+  display:inline-flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0 40px;
+}
+
+.box-news{
+  position: relative;
+  height: 400px;
+  background: #060c21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid #000;
+}
+
+/* #back to top arrow ==================================================================================================================== */
 
 .scroll-to-top {
   position: fixed;
@@ -411,9 +317,7 @@ a:hover {
   visibility: visible;
   transform: translateY(0);
 }
-
-/* #Media
-================================================== */
+/* #Media =============================================================================================================================== */
 
 @media (max-width: 1200px) {
   .scroll-to-top {
@@ -423,13 +327,11 @@ a:hover {
     left: 13px;
   }
 }
-
 @media (max-width: 991px) {
   .case-study-images li .hero-number-back {
     font-size: 26vw;
   }
 }
-
 @media (max-width: 767px) {
   .case-study-wrapper {
     background-color: rgba(31, 32, 41, 0.95);
@@ -449,9 +351,7 @@ a:hover {
     font-size: 32vw;
   }
 }
-
-/* #Link to page
-================================================== */
+/* #Link to page ======================================================================================================================== */
 
 .link-to-portfolio {
   position: fixed;
