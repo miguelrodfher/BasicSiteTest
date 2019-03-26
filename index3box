@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>Section</title>
-  <meta content="#" name="description">
-  <meta content="NextGen" name="keywords">
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1"
+        name="viewport">
+    <title>Section</title>
+    <meta content="#"
+        name="description">
+    <meta content="NextGen"
+        name="keywords">
+    <link href="css/style3boxcolor.css"
+        rel="stylesheet">
 </head>
+
 <body>
-  <!-- News==================================================================================================================================== -->
-  <div class="container">
-    <div class="box">
-      <div class="content">
-        <h2>01</h2>
-        <h3>Service One</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#">Read More</a>
-      </div>
+    <!-- News==================================================================================================================================== -->
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Service One</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Service Two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Service Three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#">Read More</a>
+            </div>
+        </div>
     </div>
-    <div class="box">
-      <div class="content">
-        <h2>02</h2>
-        <h3>Service Two</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#">Read More</a>
-      </div>
-    </div>
-    <div class="box">
-      <div class="content">
-        <h2>03</h2>
-        <h3>Service Three</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
 
 </body>
+
 </html>
